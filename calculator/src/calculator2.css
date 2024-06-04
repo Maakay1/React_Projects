@@ -1,0 +1,145 @@
+:root{
+    --btn-col:#dcdada;
+    --btn-col1:#6b6a6a;
+    --screen-col:#000000;
+    --border-col:rgba(25,25,25,0.4);
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 25);
+    height: 90vh;
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: rgb(35, 95, 54);
+}
+.screen-container{
+    background-color: var(--screen-col);
+    width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+    overflow: auto;
+    
+    
+}
+.buttons-screen{
+  
+    width:400px;
+    height:350px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    border:1px solid rgb(97, 97, 97);
+}
+.button-cover{
+    width: 100%;
+    height: 100%;
+    background-color: var(--btn-col);
+    display: grid;
+    border: 1px whitesmoke solid;
+    place-items: center;
+    font-size: 1.4rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.button-cover:hover{
+    background-color: var(--btn-col1);
+    color: white;
+    cursor: pointer;
+    border: 1px rgb(32, 29, 29) solid;
+}
+
+.screen1{
+  background-color: var(--screen-col);
+  width: 99%;
+  height:98%;
+  position: relative;
+  
+  
+}
+.screen2{
+    background-color: var(--screen-col);
+    width: 99%;
+    height: 98%;
+    border-bottom: 1px solid var(--border-col);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.write{
+    background-color: #000000;
+    display: fex;
+    align-items: flex-end;
+    border-right: 1px solid white;
+    min-height: 80%;
+    width: auto;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    font-size: 2rem;
+    left: 1rem;
+    animation-name: cursor;
+    animation:cursor 1s ease-in infinite  ;
+    max-width: 400px;
+    flex-wrap:wrap;
+    overflow-x: auto;
+    
+}
+.write2{
+    display: fex;
+    flex-direction: row-reverse;
+
+    height: 80%;
+    width: auto;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    font-size: 1.5rem;
+    left: 1rem;
+}
+.span2{
+    grid-column:span 2;
+}
+.clear{
+    background-color: rgba(106, 6, 6,1);
+}
+.clear.clear:hover{
+    background-color: rgb(150, 4, 4);
+}
+.equal{
+    background-color: rgb(4, 93, 4);
+}
+.equal:hover{
+    background-color: rgb(3, 47, 3);
+}
+@keyframes cursor {
+    0%{
+        border-right: rgba(255, 255, 255,0.0);
+    }
+    100%{
+        border-right: 1px solid white;
+    }
+}
+@media screen and (max-width: 499px) {
+    .buttons-screen{
+        width: 300px;
+     
+    }
+    .screen-container{
+        width: 300px;
+        height: 70px;
+    }
+   body{
+    overflow: auto;
+   }
+}
+
+

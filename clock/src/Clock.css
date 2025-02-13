@@ -1,0 +1,83 @@
+body{
+    background-color: pink;
+    display: grid;
+    place-items: center;
+    width: 96vw;
+    height: 90%;
+    color: purple;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+}
+.timer-top{
+    display: flex;
+    width: 50%;
+    height: 150px;
+    background-color: pink;
+    justify-content: center;
+    column-gap: 5%;
+  
+}
+.break{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.session{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-controls{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    column-gap:1% ;
+    align-items: center;
+    
+}
+.break2{
+    
+    display: grid;
+    place-items: center;
+}
+.top-icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: pink;
+}
+h3{
+    font-size: 1.5rem;
+    
+}
+.display{
+    width: 40%;
+    border: 4px rebeccapurple solid;
+    border-radius: 7vw;
+    display: grid;
+    place-items: center;
+    padding-bottom: 1%;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-icon{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    background-color: pink;
+}
+.myicon{
+    width: 100%;
+    height: 100%;
+    color: purple;
+}
